@@ -1,0 +1,32 @@
+
+apply plugin: 'java-library'
+
+repositories {
+    
+    jcenter()
+}
+
+dependencies {
+   
+    api 'org.apache.commons:commons-math3:3.6.1'
+    testCompile 'junit:junit:4.12'
+}
+
+test {
+    testLogging {
+        // set options for log level LIFECYCLE
+        events "failed"
+        exceptionFormat "short"
+
+        // set options for log level DEBUG
+        debug {
+            events "started", "skipped", "failed"
+            exceptionFormat "full"
+        }
+
+        // remove standard output/error logging from --info builds
+        // by assigning only 'failed' and 'skipped' events
+        info.events = ["failed", "skipped"]
+    }
+}
+
