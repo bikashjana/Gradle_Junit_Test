@@ -19,7 +19,7 @@ dependencies {
 ## Execution and results
 
 
-##### Either run 'gradle build' or 'gradle run' to see the test results. 
+##### Either run 'gradle build' or 'gradle test' to see the test results. 
 
 ![untitled](https://user-images.githubusercontent.com/33976658/36268398-5f2bc878-129c-11e8-89ff-ba107238119f.png)
 
